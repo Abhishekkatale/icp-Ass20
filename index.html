@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .card-container {
+            display: flex;
+            background-color: bisque;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+            /*justify-content: start;
+            justify-content: end;
+            justify-content: center;
+            justify-content: space-evenly;*/
+            align-items: center;
+            height: 400px;
+            flex-wrap: wrap;
+        }
+        .card-container1 {
+            display: flex;
+            background-color: bisque;
+            flex-direction: column;
+            /*flex-direction: row;
+            flex-direction: column-reverse;*/
+            justify-content: space-between;
+            align-items: end;
+            height: 800px;
+            width: 400px;
+        }
+
+        .card {
+            width: 150px;
+            border: 4px double black;
+            border-radius: 10px;
+            margin: 5px;
+            overflow: hidden; 
+        }
+
+        .card-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .card-title {
+            text-align: center;
+            margin: 0;
+            padding: 5px;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img src="images/S1.jpg" class="card-img" alt="Hostel Image 1" />
+            <h2 class="card-title">one</h2>
+        </div>
+        <div class="card">
+            <img src="images/S2.jpg" class="card-img" alt="Hostel Image 2" />
+            <h2 class="card-title">two</h2>
+        </div>
+        <div class="card">
+            <img src="images/S3.jpg" class="card-img" alt="Hostel Image 3" />
+            <h2 class="card-title">three</h2>
+        </div>
+        <div class="card">
+            <img src="images/S5.jpg" class="card-img" alt="Hostel Image 4" />
+            <h2 class="card-title">four</h2>
+        </div>
+    </div>
+<br>
+<br>
+    <div class="card-container1">
+        <div class="card">
+            <img src="images/S1.jpg" class="card-img" alt="Hostel Image 1" />
+            <h2 class="card-title">one</h2>
+        </div>
+        <div class="card">
+            <img src="images/S2.jpg" class="card-img" alt="Hostel Image 2" />
+            <h2 class="card-title">two</h2>
+        </div>
+        <div class="card">
+            <img src="images/S3.jpg" class="card-img" alt="Hostel Image 3" />
+            <h2 class="card-title">three</h2>
+        </div>
+        <div class="card">
+            <img src="images/S5.jpg" class="card-img" alt="Hostel Image 4" />
+            <h2 class="card-title">four</h2>
+        </div>
+    </div>
+</body>
+
+</html>
